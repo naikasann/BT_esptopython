@@ -8,7 +8,7 @@ from bleak import _logger as logger
 
 # キャラスタリックの設定(Arduino IDEのCHARACTERISTIC_TX部分をコピー)
 CHARACTERISTIC_UUID = (
-    "2049779d-88a9-403a-9c59-c7df79e1dd7c"
+    "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 )  # <--- Change to the characteristic you want to enable notifications from.
 
 
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     os.environ["PYTHONASYNCIODEBUG"] = str(1)
     address = (
         # デバイスID設定(OSによって微妙に異なる。windows10は一行下のもの)
-        "30:AE:A4:1F:93:32"  # <--- Change to your device's address here if you are using Windows or Linux
+        "xx:xx:xx:xx:xx:xx"  # <--- Change to your device's address here if you are using Windows or Linux
         if platform.system() != "Darwin"
         else "243E23AE-4A99-406C-B317-18F1BD7B4CBE"  # <--- Change to your device's address here if you are using macOS
     )
