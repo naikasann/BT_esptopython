@@ -51,6 +51,7 @@ Bleakの方が一応OSなどの依存性が少ないらしい)
 ``` windowsの設定 => デバイス => BLEまたはその他デバイスを追加する => Bluetooth ```
 
 を選択して`ESP32`選択。ペアリングを行ってください。
+
 その後、Pythonプログラムを実行します。
 まずESP32のデバイスIDを調べないといけないので
 
@@ -59,7 +60,8 @@ Bleakの方が一応OSなどの依存性が少ないらしい)
 を実行してデバイスIDを取得してください
 `xx:xx:xx:xx:xx:xx`
 このような感じのものです。
-これをコピーしてnotification.pyの52行目の部分にペーストします。
+
+これをコピーしてnotification.pyの51行目の部分にペーストします。
 
 あとArduino IDEの送信用キャラスタリックをコピーします
 送信用キャラスタリックはIDEの8行目
@@ -69,7 +71,7 @@ Bleakの方が一応OSなどの依存性が少ないらしい)
 ```
 
 の文字列部分です。
-これをコピーしてnotification.pyの18行目の部分にペーストします。
+これをコピーしてnotification.pyの11行目の部分にペーストします。
 
 実行はコマンドプロンプトで
 
@@ -86,3 +88,4 @@ Bleakのサンプルプログラムを用いた。
 
 1. [Bleak](https://github.com/hbldh/bleak)
 2. [Pythonライブラリ bleakでWindows10/macOS/Linux上でtoioコア キューブを動かしてみる - Qiita](https://qiita.com/kenichih/items/8baa27b3aecc94dd8193)
+3. [【Python】asyncio（非同期I/O）のイベントループをこねくり回す - Qiita](https://qiita.com/ynakaDream/items/b63fab24bb30dea6ddb1)
